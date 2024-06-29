@@ -5,10 +5,10 @@ public class Beginner_3 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        int num_1 = scanner.nextInt();
 
         System.out.println("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        int num_2 = scanner.nextInt();
 
         System.out.println("Enter an operator (+, -, *, /): ");
         String operator = scanner.next();
@@ -17,14 +17,14 @@ public class Beginner_3 {
         boolean validOperation = true;
 
         if (operator.equals("+")) {
-            result = num1 + num2;
+            result = num_1 + num_2;
         } else if (operator.equals("-")) {
-            result = num1 - num2;
+            result = num_1 - num_2;
         } else if (operator.equals("*")) {
-            result = num1 * num2;
+            result = num_1 * num_2;
         } else if (operator.equals("/")) {
-            if (num2 != 0) {
-                result = num1 / num2;
+            if (num_2 != 0) {
+                result = num_1 / num_2;
             } else {
                 System.out.println("Error: Division by zero is not allowed.");
                 validOperation = false;
